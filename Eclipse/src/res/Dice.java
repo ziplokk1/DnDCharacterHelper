@@ -10,6 +10,20 @@ public class Dice {
 	}
 	
 	public String getDie() { 
-		return Integer.toString(qty) + "d" + Integer.toString(sides);
+		if(sides == 1) { 
+			return "1";
+		} else if (sides == 0) { 
+			return "-";
+		} else {
+			return Integer.toString(qty) + "d" + Integer.toString(sides);
+		}
+	}
+	
+	public int getFaces() { 
+		return sides;
+	}
+	
+	public int getQuantity() { 
+		return qty;
 	}
 }

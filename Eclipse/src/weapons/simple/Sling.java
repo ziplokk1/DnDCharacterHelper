@@ -4,14 +4,14 @@ import res.Dice;
 import res.Money.Copper;
 import weapons.Weapon;
 
-public class Club extends Weapon {
-	public Club() { 
-		super("Club");
+public class Sling extends Weapon {
+	public Sling() {
+		super("Sling");
 		super.setCost(new Copper(0));
-		super.setDamage(new Dice(1, 6));
+		super.setDamage(new Dice(1, 4));
 		super.setCriticalMultiplier(2);
-		super.setRangeIncrement(10);
-		super.setWeight(3);
+		super.setRangeIncrement(50);
+		super.setWeight(0);
 		super.setType("Bludgeoning");
 	}
 }

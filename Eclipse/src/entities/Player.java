@@ -3,7 +3,7 @@ package entities;
 public class Player {
 	private int HP;
 	private int AC;
-	private String size;
+	private int size;
 	private String CLASS;
 	private String alignment;
 	private String race;
@@ -30,7 +30,7 @@ public class Player {
 		CLASS = class0;
 	}
 	
-	public void setSize(String size0) { 
+	public void setSize(int size0) { 
 		size = size0;
 	}
 	
@@ -58,7 +58,7 @@ public class Player {
 		return CLASS;
 	}
 	
-	public String getSize() { 
+	public int getSize() { 
 		return size;
 	}
 	
